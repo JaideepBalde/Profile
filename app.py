@@ -22,8 +22,6 @@ st.write("**Jaideep Balde**")
 st.write("Phone: +91-8788437458 | Email: [jaydeepbalade15@gmail.com](mailto:jaydeepbalade15@gmail.com)")
 st.write("LinkedIn: [linkedin.com/in/jaideep-balde](https://linkedin.com/in/jaideep-balde)")
 
-# The rest of the sections remain the same...
-
 # Objective Section
 st.header("Objective")
 st.write("""
@@ -116,9 +114,135 @@ st.download_button(
     mime="application/pdf"
 )
 
-# Footer Section
-st.markdown("""
-    <footer style="text-align:center; padding:10px; font-size:12px; color:#777;">
-        <p>&copy; 2025 Jaideep Balde | All Rights Reserved</p>
-    </footer>
-""", unsafe_allow_html=True)
+# Interactive Quiz Section
+st.header("Interactive Quiz")
+
+# Question 1
+st.subheader("1. What does AIML stand for?")
+options_q1 = ["Artificial Intelligence and Machine Learning", "Artificial Intelligence and Mixed Learning", "Advanced Interactive Machine Learning"]
+answer_q1 = "Artificial Intelligence and Machine Learning"
+user_answer_q1 = st.radio("Choose the correct option:", options_q1)
+
+# Button to check the answer for Question 1
+if st.button("Submit Answer for Question 1"):
+    if user_answer_q1 == answer_q1:
+        st.success("Correct! AIML stands for Artificial Intelligence and Machine Learning.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 2
+st.subheader("2. Which language is primarily used for web development?")
+options_q2 = ["Python", "JavaScript", "C++"]
+answer_q2 = "JavaScript"
+user_answer_q2 = st.radio("Choose the correct option:", options_q2, key="q2")
+
+# Button to check the answer for Question 2
+if st.button("Submit Answer for Question 2"):
+    if user_answer_q2 == answer_q2:
+        st.success("Correct! JavaScript is primarily used for web development.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 3
+st.subheader("3. What does the acronym 'API' stand for?")
+options_q3 = ["Application Programming Interface", "Artificial Programming Interface", "Application Process Integration"]
+answer_q3 = "Application Programming Interface"
+user_answer_q3 = st.radio("Choose the correct option:", options_q3, key="q3")
+
+# Button to check the answer for Question 3
+if st.button("Submit Answer for Question 3"):
+    if user_answer_q3 == answer_q3:
+        st.success("Correct! API stands for Application Programming Interface.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 4
+st.subheader("4. Which of the following is a popular Python library for data manipulation?")
+options_q4 = ["NumPy", "TensorFlow", "React"]
+answer_q4 = "NumPy"
+user_answer_q4 = st.radio("Choose the correct option:", options_q4, key="q4")
+
+# Button to check the answer for Question 4
+if st.button("Submit Answer for Question 4"):
+    if user_answer_q4 == answer_q4:
+        st.success("Correct! NumPy is a popular library for data manipulation in Python.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 5
+st.subheader("5. What does the acronym 'ML' stand for?")
+options_q5 = ["Machine Learning", "Mixed Learning", "Model Learning"]
+answer_q5 = "Machine Learning"
+user_answer_q5 = st.radio("Choose the correct option:", options_q5, key="q5")
+
+# Button to check the answer for Question 5
+if st.button("Submit Answer for Question 5"):
+    if user_answer_q5 == answer_q5:
+        st.success("Correct! ML stands for Machine Learning.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 6
+st.subheader("6. What is the primary use of Streamlit?")
+options_q6 = ["Data Science Applications", "Game Development", "Web Design"]
+answer_q6 = "Data Science Applications"
+user_answer_q6 = st.radio("Choose the correct option:", options_q6, key="q6")
+
+# Button to check the answer for Question 6
+if st.button("Submit Answer for Question 6"):
+    if user_answer_q6 == answer_q6:
+        st.success("Correct! Streamlit is primarily used for building Data Science applications.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 7
+st.subheader("7. Which framework is used for Android app development?")
+options_q7 = ["Flutter", "React Native", "Android Studio"]
+answer_q7 = "Android Studio"
+user_answer_q7 = st.radio("Choose the correct option:", options_q7, key="q7")
+
+# Button to check the answer for Question 7
+if st.button("Submit Answer for Question 7"):
+    if user_answer_q7 == answer_q7:
+        st.success("Correct! Android Studio is used for Android app development.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 8
+st.subheader("8. What does 'SQL' stand for?")
+options_q8 = ["Structured Query Language", "Simple Query Language", "Standardized Query Language"]
+answer_q8 = "Structured Query Language"
+user_answer_q8 = st.radio("Choose the correct option:", options_q8, key="q8")
+
+# Button to check the answer for Question 8
+if st.button("Submit Answer for Question 8"):
+    if user_answer_q8 == answer_q8:
+        st.success("Correct! SQL stands for Structured Query Language.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 9
+st.subheader("9. What is a major application of Machine Learning in healthcare?")
+options_q9 = ["Predicting Disease Outcomes", "Managing Financial Portfolios", "Web Development"]
+answer_q9 = "Predicting Disease Outcomes"
+user_answer_q9 = st.radio("Choose the correct option:", options_q9, key="q9")
+
+# Button to check the answer for Question 9
+if st.button("Submit Answer for Question 9"):
+    if user_answer_q9 == answer_q9:
+        st.success("Correct! Machine Learning is used for predicting disease outcomes.")
+    else:
+        st.error("Incorrect! Please try again.")
+
+# Question 10
+st.subheader("10. Which platform is widely used for deploying Machine Learning models?")
+options_q10 = ["Google Cloud", "AWS", "All of the above"]
+answer_q10 = "All of the above"
+user_answer_q10 = st.radio("Choose the correct option:", options_q10, key="q10")
+
+# Button to check the answer for Question 10
+if st.button("Submit Answer for Question 10"):
+    if user_answer_q10 == answer_q10:
+        st.success("Correct! All of the above platforms are used for deploying Machine Learning models.")
+    else:
+        st.error("Incorrect! Please try again.")
